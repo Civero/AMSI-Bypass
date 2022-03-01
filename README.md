@@ -33,4 +33,6 @@ Then call "Run_bypass" function:
 
 Note: Depending on the policy that we have configured on our computer, we must allow execution of scripts, because the tool contains scripts not signed by Microsoft. We can do a quick bypass of Powershell to allow all scripts to run using the command: **`powershell.exe -ep bypass`** .
 
-##Tutorial
+## Tutorial
+
+This section explains the use of some bypass techniques.
