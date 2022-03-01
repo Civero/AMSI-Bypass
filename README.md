@@ -15,7 +15,12 @@ To install AMSI-Bypass you only need:
 
 # Usage
 
-It´s only necessary to import the module that will load the functions of the tool. We do it through the command `Import-Module .\AMSI_ByPass.psd1`. 
-With the command `Get-Module` we can verify that it has been loaded correctly. 
+To import the module that will load all functions of the tool:
 
-Note: Depending on the policy that we have configured on our computer, we must allow execution of scripts, because the tool contains scripts not signed by Microsoft. We can do a quick bypass of Powershell to allow all scripts to run using the command: **powershell.exe -ep bypass**. 
+`PS C:\tools\AMSI_Bypass> Import-Module .\AMSI_ByPass.psd1`
+
+Verify that it has been loaded correctly.
+
+`PS C:\tools\AMSI_Bypass> Get-Module`  
+
+Note: Depending on the policy that we have configured on our computer, we must allow execution of scripts, because the tool contains scripts not signed by Microsoft. We can do a quick bypass of Powershell to allow all scripts to run using the command: **`powershell.exe -ep bypass`** .
