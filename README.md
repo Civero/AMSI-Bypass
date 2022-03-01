@@ -19,10 +19,16 @@ To import the module that will load all functions of the tool:
 
 `PS C:\tools\AMSI_Bypass> Import-Module .\AMSI_ByPass.psd1`
 
-Verify that it has been loaded correctly.
+Verify that it has been loaded correctly:
 
 `PS C:\tools\AMSI_Bypass> Get-Module`  
 
- ! /assets/images/check-module.png
+![Import and check module](/images/check-module.png)
+
+Then call "Run_bypass" function:
+
+`PS C:\tools\AMSI_Bypass> Run_bypass`
+
+![Run_bypass](/images/Run_bypass.png)
 
 Note: Depending on the policy that we have configured on our computer, we must allow execution of scripts, because the tool contains scripts not signed by Microsoft. We can do a quick bypass of Powershell to allow all scripts to run using the command: **`powershell.exe -ep bypass`** .
