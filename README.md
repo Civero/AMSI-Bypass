@@ -23,4 +23,6 @@ Verify that it has been loaded correctly.
 
 `PS C:\tools\AMSI_Bypass> Get-Module`  
 
+ ! /assets/images/check-module.png
+
 Note: Depending on the policy that we have configured on our computer, we must allow execution of scripts, because the tool contains scripts not signed by Microsoft. We can do a quick bypass of Powershell to allow all scripts to run using the command: **`powershell.exe -ep bypass`** .
