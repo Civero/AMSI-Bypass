@@ -1,5 +1,7 @@
 # AMSI-Bypass
 
+**AMSI-Bypass** is a collection of the best known techniques for bypassing AMSI. Can be used to aid penetration testers.
+
 ## Installation
 
 To install AMSI-Bypass you only need:
