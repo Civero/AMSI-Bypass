@@ -31,8 +31,50 @@ Then call "Run_bypass" function:
 
 ![Run_bypass](/images/Run-Bypass.png)
 
-Note: Depending on the policy that we have configured on our computer, we must allow execution of scripts, because the tool contains scripts not signed by Microsoft. We can do a quick bypass of Powershell to allow all scripts to run using the command: **`powershell.exe -ep bypass`** .
+Note: Depending on the policy that we have configured on our computer, we must allow execution of scripts, because the tool contains scripts not signed by Microsoft. We can do a quick bypass of Powershell to allow all scripts to run using the command: **`powershell.exe -ep bypass`**.
 
 ## Tutorial
 
-This section explains the use of some bypass techniques.
+Simple. After to run 'Run_bypass' function only have to choose one option (enter a number from 1-6, or 0 to exit). Tool will try to bypass AMSI through technique selected.
+
+```
+
+     ('-.      _   .-')      .-')                    .-. .-')                   _ (`-.     ('-.       .-')      .-')    
+    ( OO ).-. ( '.( OO )_   ( OO ).                  \  ( OO )                 ( (OO  )   ( OO ).-.  ( OO ).   ( OO ).  
+    / . --. /  ,--.   ,--.)(_)---\_)   ,-.-')         ;-----.\    ,--.   ,--. _.`     \   / . --. / (_)---\_) (_)---\_) 
+    | \-.  \   |   `.'   | /    _ |    |  |OO)        | .-.  |     \  `.'  / (__...--''   | \-.  \  /    _ |  /    _ |
+    '-'  |  |  |         | \  :` `.    |  |  \        | '-' /_)  .-')     /   |  /  | | .-'-'  |  | \  :` `.  \  :` `.  
+    | |_.'  |  |  |'.'|  |  '...''.)   |  |(_/        | .-. `.  (OO  \   /    |  |_.' |  \| |_.'  |  '...''.)  '...''.) 
+    |  .-.  |  |  |   |  | .-._)   \  ,|  |_.'        | |  \  |  |   /  /\_   |  .___.'   |  .-.  | .-._)   \ .-._)   \ 
+    |  | |  |  |  |   |  | \       / (_|  |           | '--'  /  `-./  /.__)  |  |        |  | |  | \       / \       / 
+    `--' `--'  `--'   `--'  `-----'    `--'           `------'     `--'       `--'        `--' `--'  `-----'   `-----' 
+
+Bienvenido a la herramienta de bypass de AMSI.
+Las técnicas pueden variar su efectividad en función del motor antivirus / EPR instalado en el equipo.
+
+Por favor, seleccione un método de byPass de AMSI...
+
+[+] Método 1: PowerShell Downgrade
+
+[+] Método 2: Parcheo de memoria
+
+[+] Método 3: Codificar cadena en base64
+
+[+] Método 4: Hooking a Amsi-ScanBuffer
+
+[+] Método 5: Forzar un error
+
+[+] Método 6: Eliminar clave del registro. ¡NO RECOMENDADA!
+
+[+] Método 7: DLL Hijacking
+
+[+] 0. Salir
+
+Opción:
+```
+
+## Examples
+
+### Patching memory (option 2)
+
+![Example patching memory](/images/example-2.png)
